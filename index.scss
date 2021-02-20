@@ -1,0 +1,149 @@
+.brand-wrap {
+	padding: 24px 70px 0 36px;
+	box-sizing: border-box;
+	position: relative;
+	.scroll-wrap {
+		height: 100%;
+		overflow: auto;
+		position: relative;
+		background-color: #fff;
+	}
+
+	.brand-section {
+		position: relative;
+	}
+	.section-attention {
+		position: relative;
+		.attention-title {
+			font-size: 30px;
+			font-weight: 600;
+			line-height: 42px;
+			color: #1b1b1b;
+			margin-bottom: 32px;
+			display: flex;
+			align-items: center;
+			.more{
+				margin-left: auto;
+				color: #666666;
+				font-size: 24rpx;
+				line-height: 34rpx;
+				&.hasArrow{
+					position: relative;
+					&:after{
+						position: relative;
+						display: inline-block;
+						margin-left: 5px;
+						content: '';
+						width: 10px;
+						height: 19px;
+						background: url("https://mt100180-1251601690.image.myqcloud.com/sphimspic/101472/e40c3fb0-6527-11eb-8117-1b2eb91bb7b7_size_20x38") no-repeat 50%/ contain;
+					}
+					
+				}
+			}
+		}
+		.attention-list {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 36px;
+			.attention-item {
+				width: 134px;
+				height: 134px;
+				border: 1px solid #f4f4f4;
+				border-radius: 4px;
+				overflow: hidden;
+				margin-right: 36px;
+				margin-bottom: 32px;
+				&:nth-child(4n) {
+					margin-right: 0;
+				}
+				.item-img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+	.section-normal {
+		position: relative;
+		margin-bottom: 56px;
+		.normal-title {
+			font-size: 30px;
+			font-weight: 600;
+			line-height: 42px;
+			padding-bottom: 16px;
+			border-bottom: 1px solid #e8e8e8;
+		}
+		.normal-list {
+			position: relative;
+			.normal-item {
+				display: flex;
+				align-items: center;
+				border-bottom: 1px solid #eee;
+				padding: 15px 0;
+				.thumbnail {
+					width: 72px;
+					height: 72px;
+					border: 1px solid #f4f4f4;
+					border-radius: 3px;
+					box-sizing: border-box;
+					overflow: hidden;
+					margin-right: 24px;
+					flex-shrink: 0;
+					.item-img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+				.item-desc {
+					width: 500px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					color: #1b1b1b;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
+.nav-bar-wrap {
+	position: absolute;
+	z-index: 100;
+	right: 16px;
+	top: 64px;
+	.nav-bar-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.nav-item {
+			font-size: 22px;
+			color: #999;
+			font-weight: 500;
+			line-height: 32px;
+			width: 32px;
+			height: 32px;
+			text-align: center;
+			&.cur {
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				color: #fff;
+				background-color: var(--main);
+			}
+			&.nav-item-icon {
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				background:  url("https://mt100180-1251601690.image.myqcloud.com/sphimspic/101472/05db8fd0-6526-11eb-8117-1b2eb91bb7b7_size_44x44") no-repeat 50%/ 22px 22px;
+				&.cur {
+					width: 32px;
+					height: 32px;
+					background: var(--main) url("https://mt100180-1251601690.image.myqcloud.com/sphimspic/101472/f00ea8e0-6525-11eb-8117-1b2eb91bb7b7_size_22x22") no-repeat 50%/ 22px 22px;
+				}
+			}
+		}
+	}
+}
